@@ -8,17 +8,23 @@ Original file is located at
 """
 
 # Install necessary libraries
-!pip install langchain-google-genai googletrans==4.0.0-rc1 ipywidgets
-!pip install googletrans
-import os
-import ipywidgets as widgets
-from IPython.display import display, HTML
+import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import SystemMessage, HumanMessage
 from googletrans import Translator
+from dotenv import load_dotenv
+import os
+
+# ✅ Load API Key securely
+load_dotenv()
+GOOGLE_API_KEY = "AIzaSyCCvaPOXeNVp72lsvCRMHmFysqlj5sfCG0" # Make sure this is set in Streamlit Secrets
+
+# ✅ Streamlit UI Configuration
+st.set_page_config(page_title="AI Travel Assistant", layout="wide")
+
 
 # ✅ Set Google API Key Directly (Replace with your own API Key)
-GOOGLE_API_KEY = "AIzaSyCCvaPOXeNVp72lsvCRMHmFysqlj5sfCG0"
+
 
 # ✅ Title
 display(HTML("<h1 style='text-align:center;'>🗺️✈︎ Destination Dynamo AI</h1>"))
