@@ -7,7 +7,7 @@ import os
 
 # ✅ Load API Key securely from .env or Streamlit Secrets
 load_dotenv()
-GOOGLE_API_KEY = os.getenv("AIzaSyCCvaPOXeNVp72lsvCRMHmFysqlj5sfCG0")  # Secure API Key Handling
+GOOGLE_API_KEY = os.getenv("AIzaSyDjKBYEh1x5BOu3HkeQOOuhoHbo8Ovq5EM")  # Secure API Key Handling
 
 # ✅ Streamlit Page Configuration
 st.set_page_config(page_title="AI Travel Assistant", layout="wide")
