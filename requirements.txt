@@ -1,9 +1,5 @@
-googletrans==4.0.0-rc1
 streamlit
-google-generativeai
-langchain
 langchain-google-genai
-deep-translator
-textwrap3
+googletrans==4.0.0-rc1
+ipywidgets
 python-dotenv
-googletrans
