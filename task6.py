@@ -8,7 +8,7 @@ Original file is located at
 """
 
 # Install necessary libraries
-pip install streamlit langchain-google-genai googletrans==4.0.0-rc1 python-dotenv
+!pip install langchain-google-genai googletrans==4.0.0-rc1 ipywidgets
 !pip install googletrans
 import os
 import ipywidgets as widgets
